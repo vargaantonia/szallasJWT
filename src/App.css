@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; 
 }
 
 .App-link {
@@ -35,4 +35,217 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body {
+  background-image: url('backgroung-image.jpeg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white; 
+}
+
+::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); 
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+body:hover::before {
+  opacity: 0.5;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar {
+  background: linear-gradient(45deg, #8e735b, #6f4f29);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  color: white; 
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white !important;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: cyan;
+  color: #6f4f29 !important;
+  border-radius: 4px;
+}
+
+
+.login-container {
+  max-width: 500px;
+  margin: 5rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #8e735b;
+  color: white; 
+}
+
+.login-container h2 {
+  font-size: 2.2rem;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  color: white; 
+}
+
+.login-container input:focus {
+  border-color: #6f4f29;
+  box-shadow: 0 4px 8px rgba(111, 79, 41, 0.2);
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(45deg, #8e735b, #6f4f29);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-container button:hover {
+  background: linear-gradient(45deg, #6f4f29, #8e735b);
+  transform: scale(1.05);
+}
+
+
+.szallas-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #8e735b;
+  color: white; 
+}
+
+.szallas-container h2 {
+  font-size: 2rem;
+  color: #6f4f29;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.szallas-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.szallas-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.szallas-container li:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.szallas-container li span {
+  font-size: 1rem;
+  color: white; 
+}
+
+
+.error {
+  color: #e74c3c;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .login-container {
+      padding: 1.5rem;
+  }
+
+  .szallas-container {
+      padding: 1rem;
+  }
+}
+div h2 {
+  color: white; 
+}
+div p {
+  color: white; 
 }

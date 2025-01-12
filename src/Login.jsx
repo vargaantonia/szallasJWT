@@ -25,12 +25,12 @@ export const Login = () => {
     return(
         <div>
             <h2>Bejelentkezés</h2>
-            FelhasználóNév:
+            <p>Felhasználónév:</p>
             {error && <p style={{color: "red"}}>{error}</p>}
             <input type="text" placeholder="Felhasználónév" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)}/> <br/>
-             Jelszó:
+            <p>Jelszó:</p>
             <input type="password" placeholder="Jelszó" 
             value={password} 
             onChange={(e) => setPassword(e.target.value)}/> <br/>
